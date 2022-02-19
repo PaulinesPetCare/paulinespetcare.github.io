@@ -18,6 +18,8 @@ html {
 .nav-btn-list li {
     margin: 0.1rem;
     border-bottom: 1px var(--grey-border) solid;
+    transition-property: background-color;
+    transition-duration: 0.4s;
 }
 
 .nav-btn-list li:hover {

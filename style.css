@@ -65,20 +65,26 @@ h3 {
     color: var(--heading-colour);
 }
 
-.nav-menu {
+#nav-menu {
     display: block;
     justify-content: center;
     text-align: center;
+    background-color: var(--background-col);
 }
 
-.nav-menu ul {
+.sticky-bar {
+
+}
+
+
+
+#nav-menu ul {
     display: flex;
     justify-content: center;
     padding: 0;    
-    padding-bottom: 3vh;
 }
 
-.nav-menu img {
+#nav-menu img {
     max-width: 40vw;
     margin-top: 2vh;
 }
@@ -94,7 +100,7 @@ h3 {
     height: 50vh;
 }
 
-.nav-menu, .contact-bar p {
+#nav-menu, .contact-bar p {
     margin-left: var(--main-margin);
     margin-right: var(--main-margin);
 }
@@ -121,6 +127,10 @@ h1, h2, h3 {
     margin-right: 2vw;
 }
 
+.text-container {
+    margin-bottom: 3rem;
+}
+
 .services li {
     padding-bottom: 1rem;
 }
@@ -137,6 +147,10 @@ footer P {
     margin: 0;
 }
 
+table {
+    max-width: 100%;
+}
+
 
 /*
 * {
@@ -147,13 +161,13 @@ footer P {
 @media screen and (min-width: 480px)
 {
 
-    .nav-menu img {
+    #nav-menu img {
         float: left;
         max-height: 10vh;
         margin-top: 0;
     }
 
-    .nav-menu ul {
+    #nav-menu ul {
         display: flex;
         justify-content: right;
         padding-top: 3vh;

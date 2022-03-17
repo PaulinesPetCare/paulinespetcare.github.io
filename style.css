@@ -14,6 +14,8 @@ html {
     --lines-col: #8baecc;
     --hover-col: #f1f1f1;
     --dark-background-col: #f1f1f1;
+    --main-green-col: hsl(75, 58%, 60%);
+    --darker-green-col: hsl(75, 58%, 50%);
 }
 
 body {
@@ -22,13 +24,11 @@ body {
 }
 
 
-h2 {
-    color: var(--heading-colour);
-}
-
-h3 {
+h2, h3 {
     color: var(--heading2-colour);
 }
+
+
 
 p {
     color: var(--paragraph-col);
@@ -75,6 +75,7 @@ p {
     text-align: center;
     background-color: var(--background-col);
     padding-bottom: 2rem;
+    
 }
 
 #nav-menu .img-container {
@@ -100,9 +101,15 @@ p {
 
 .page-graphic {
     text-align: center;
-    background-color: rgb(183, 212, 95);;
+    background-color: var(--main-green-col);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    position: relative;
+    background-image: url(img/background.png);
+    background-repeat: repeat;
+    background-size: auto;
+    border-top: 1px var(--lines-col) solid;
+    border-bottom: 1px var(--lines-col) solid;
 }
 
 .page-graphic img{
@@ -146,12 +153,9 @@ h1, h2, h3 {
     align-content: center;
     text-align: center;
     flex-grow: 1;
-    flex-basis: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 3rem;
-    border-right: 3rem;
-
+    flex-basis: 0;
+    width:auto;
+    min-width: 300px;
 }
 
 .price-container table {
@@ -159,6 +163,7 @@ h1, h2, h3 {
     margin-right: auto;
     
 }
+
 
 .services li {
     padding-bottom: 1rem;
@@ -217,7 +222,8 @@ table {
 
 th, td {
     padding: 0.5rem;
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 table, th, td {
@@ -226,6 +232,9 @@ table, th, td {
 
 
 tr:nth-child(odd) {background-color: var(--hover-col);}
+tr:nth-child(1) {
+    background-color: var(--darker-green-col);
+}
 
 
 /*
@@ -275,6 +284,11 @@ tr:nth-child(odd) {background-color: var(--hover-col);}
         width: auto;
     }
 
+    .price-container {
+        
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
     
 
 }

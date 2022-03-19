@@ -143,6 +143,7 @@ h1, h2, h3 {
 .main-content .text-container p{
     margin-left: 2vw;
     margin-right: 2vw;
+    
 }
 
 .text-container {
@@ -161,7 +162,6 @@ h1, h2, h3 {
 .price-container table {
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 

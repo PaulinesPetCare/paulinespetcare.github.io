@@ -150,6 +150,10 @@ h1, h2, h3 {
     margin-bottom: 3rem;
 }
 
+.note {
+    text-align: center;
+}
+
 .price-container {
     align-content: center;
     text-align: center;
